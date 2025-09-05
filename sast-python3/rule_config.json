@@ -1,0 +1,1002 @@
+{
+  "FuncCallReturnValueTaintSource": [
+    {
+      "fsig": "read",
+      "calleeType": "http.client.HTTPResponse",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "urlopen",
+      "calleeType": "urllib.request",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "parse_qs",
+      "calleeType": "urllib.parse",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "load",
+      "calleeType": "http.cookies.SimpleCookie",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "get_json",
+      "calleeType": "flask.wrappers.Request",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "body",
+      "calleeType": "fastapi.Request",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "receive_text",
+      "calleeType": "fastapi.WebSocket",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "receive_json",
+      "calleeType": "fastapi.WebSocket",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "get_argument",
+      "calleeType": "tornado.web.RequestHandler",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "get_arguments",
+      "calleeType": "tornado.web.RequestHandler",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "json",
+      "calleeType": "sanic.request.Request",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "decode_message",
+      "calleeType": "fastmcp.codec",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "invocation_metadata",
+      "calleeType": "grpc.ServicerContext",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "read",
+      "calleeType": "werkzeug.datastructures.FileStorage",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "read",
+      "calleeType": "django.core.files.uploadedfile.UploadedFile",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "parse_args",
+      "calleeType": "argparse.ArgumentParser",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "getenv",
+      "calleeType": "os",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "dotenv_values",
+      "calleeType": "dotenv",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "loads",
+      "calleeType": "json",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "load",
+      "calleeType": "yaml",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "load",
+      "calleeType": "toml",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "loads",
+      "calleeType": "pickle",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "loads",
+      "calleeType": "marshal",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "read_string",
+      "calleeType": "configparser.ConfigParser",
+      "values": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    }
+  ],
+  "FuncCallArgTaintSource": [
+    {
+      "fsig": "request",
+      "calleeType": "http.client.HTTPConnection",
+      "args": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "on_message",
+      "calleeType": "flask_socketio.SocketIO",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "on_event",
+      "calleeType": "flask_socketio.SocketIO",
+      "args": [
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "*",
+      "calleeType": "*",
+      "args": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "on_message",
+      "calleeType": "tornado.websocket.WebSocketHandler",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "handle_request",
+      "calleeType": "fastmcp.server.MCPServer",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "call",
+      "calleeType": "fastmcp.client.MCPClient",
+      "args": [
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "insecure_channel",
+      "calleeType": "grpc",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "*",
+      "calleeType": "*Stub",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "execute",
+      "calleeType": "sqlalchemy.orm.Session",
+      "args": [
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "raw",
+      "calleeType": "django.db.models.Manager",
+      "args": [
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "raw",
+      "calleeType": "tortoise.models.Model",
+      "args": [
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "get",
+      "calleeType": "redis.Redis",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "set",
+      "calleeType": "redis.Redis",
+      "args": [
+        0,
+        1
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "fsig": "get",
+      "calleeType": "aioredis.Redis",
+      "args": [
+        0
+      ],
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    }
+  ],
+  "TaintSource": [
+    {
+      "path": "path",
+      "className": "http.server.BaseHTTPRequestHandler",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "http.server.BaseHTTPRequestHandler",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "args",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "form",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "values",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "json",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "data",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "files",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "cookies",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "view_args",
+      "className": "flask.wrappers.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "query_params",
+      "className": "fastapi.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "path_params",
+      "className": "fastapi.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "fastapi.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "cookies",
+      "className": "fastapi.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "GET",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "POST",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "FILES",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "body",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "COOKIES",
+      "className": "django.http.HttpRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "kwargs",
+      "className": "django.urls.ResolverMatch",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "body",
+      "className": "tornado.httputil.HTTPServerRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "files",
+      "className": "tornado.httputil.HTTPServerRequest",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "args",
+      "className": "sanic.request.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "form",
+      "className": "sanic.request.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "files",
+      "className": "sanic.request.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "query_params",
+      "className": "starlette.requests.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "path_params",
+      "className": "starlette.requests.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "starlette.requests.Request",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "value",
+      "className": "kafka.consumer.fetcher.ConsumerRecord",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "body",
+      "className": "pika.frame.Method",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "headers",
+      "className": "pika.spec.BasicProperties",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "filename",
+      "className": "werkzeug.datastructures.FileStorage",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "argv",
+      "className": "sys",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    },
+    {
+      "path": "os.environ",
+      "kind": "PYTHON_INPUT",
+      "scopeFile": "all",
+      "scopeFunc": "all"
+    }
+  ],
+  "FuncCallTaintSink": [
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "session.execute",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "engine.execute",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "MyModel.objects.raw",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "cursor.execute",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "db.execute_sql",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSqlInjection",
+      "fsig": "MyModel.raw",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonCommandInjection",
+      "fsig": "os.system",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonCommandInjection",
+      "fsig": "os.popen",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonCommandInjection",
+      "fsig": "subprocess.run",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonCommandInjection",
+      "fsig": "subprocess.Popen",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonCommandInjection",
+      "fsig": "asyncio.create_subprocess_shell",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "open",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "pathlib.Path.write_text",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "shutil.move",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "os.rename",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "os.remove",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "Flask.send_from_directory",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonPathTraversal",
+      "fsig": "aiofiles.open",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSSRF",
+      "fsig": "requests.get",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSSRF",
+      "fsig": "requests.post",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSSRF",
+      "fsig": "urllib.request.urlopen",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSSRF",
+      "fsig": "httpx.AsyncClient.get",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonSSRF",
+      "fsig": "smtplib.SMTP.sendmail",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonTemplateInjection",
+      "fsig": "Template.render",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonTemplateInjection",
+      "fsig": "django.shortcuts.render",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonTemplateInjection",
+      "fsig": "Template.render",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonXSS",
+      "fsig": "fastapi.responses.HTMLResponse",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonLogInjection",
+      "fsig": "logging.Logger.info",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonLogInjection",
+      "fsig": "logging.Logger.error",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonLogInjection",
+      "fsig": "structlog.get_logger().msg",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonDeserializationGadget",
+      "fsig": "pickle.dump",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonDeserializationGadget",
+      "fsig": "pickle.dumps",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonDeserializationGadget",
+      "fsig": "yaml.dump",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonDeserializationGadget",
+      "fsig": "json.xxdumps",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonResponseWrite",
+      "fsig": "flask.Response",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonResponseWrite",
+      "fsig": "fastapi.Response",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonResponseWrite",
+      "fsig": "django.http.HttpResponse",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonInfoLeak",
+      "fsig": "traceback.print_exc",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonInfoLeak",
+      "fsig": "logging.exception",
+      "kind": "PYTHON_INPUT"
+    },
+    {
+      "args": [
+        "*"
+      ],
+      "attribute": "PythonInfoLeak",
+      "fsig": "django.settings.SECRET_KEY",
+      "kind": "PYTHON_INPUT"
+    }
+  ],
+  "ScanMode": "sound",
+  "ErrorMode": "release",
+  "EntryMode": "custom",
+  "RouterPath": [],
+  "Rules": [
+    {
+      "advice": "Avoid flowing the source to the taint sink",
+      "desc": "taint flow for python input",
+      "service": 1,
+      "type": "default_taint_flow_python_input"
+    }
+  ]
+}
+
