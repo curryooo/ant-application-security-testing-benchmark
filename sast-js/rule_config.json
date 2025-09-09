@@ -1,1009 +1,1015 @@
-{
-  "TaintSource": [
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.query",
-      "scopeFile": "all",
-      "scopeFunc": "all"
+[
+  {
+    "checkerIds": [
+      "taint_flow_egg_input",
+      "taint_flow_js_input"
+    ],
+    "sources": {
+      "TaintSource": [
+        {
+          "path": "cookie",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "localStorage",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "sessionStorage",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.url",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.method",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "options.path",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "options.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "process.argv",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "process.env",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "querystring.parse",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "url.parse.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.body",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.cookies",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.get",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.ip",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.ips",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.route.path",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.file",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "req.files",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.request.body",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.req.files",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.queries",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.request.body",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.get",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.ip",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.ips",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "parts",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "stream",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.ctx.args",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "process.env",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "request.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "request.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "request.body",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "request.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "parts",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "file",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "location.search",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "location.hash",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "location.pathname",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "document.cookie",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "localStorage",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "sessionStorage",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "window.name",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "history.state",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "fetch.url",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "fetch.body",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "fetch.headers",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "WebSocket.url",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "postMessage.data",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "useSearchParams",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "useParams",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "useLocation",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "context.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "context.req",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "context.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "useRoute.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "useRoute.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.route.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.route.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ActivatedRoute.queryParams",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ActivatedRoute.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ActivatedRoute.snapshot.data",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "call.request",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "call.metadata.getMap",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "requestMessage",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "redis.get",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "redis.mget",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ioredis.get",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "redis.xread",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "msg.content.toString",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "msg.fields.routingKey",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "message.value.toString",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "message.key.toString",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "payload.toString",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "JSON.parse",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "YAML.parse",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "YAML.load",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ini.parse",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "msgpack.decode",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "protobufjs.Message.decode",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.queries",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.request",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.userId",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "ctx.user.userId",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.ctx.query",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.ctx.queries",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.ctx.params",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        },
+        {
+          "path": "this.ctx.request",
+          "scopeFile": "all",
+          "scopeFunc": "all"
+        }
+      ]
     },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.queries",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.params",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.request",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.userId",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "ctx.user.userId",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.query",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.queries",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.params",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.request",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.userId",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "this.ctx.user.userId",
-      "scopeFile": "all",
-      "scopeFunc": "all"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "fuzzyStr",
-      "scopeFile": "/app/controller/sqlEggMysql.js",
-      "scopeFunc": "eggConnWhite2"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "param",
-      "scopeFile": "/app/controller/VariableCover/anti_variable_cover_4.js",
-      "scopeFunc": "echo4"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "fuzzyStr",
-      "scopeFile": "/app/controller/sqlEggMysql.js",
-      "scopeFunc": "eggConnWhite1"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "params",
-      "scopeFile": "/app/controller/VariableCover/variable_cover_1.js",
-      "scopeFunc": "query"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "advisorId",
-      "scopeFile": "/app/controller/Level_test/LevelParamSelf3.js",
-      "scopeFunc": "paramself3"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "instId",
-      "scopeFile": "/app/controller/Level_test/LevelParamSelf3.js",
-      "scopeFunc": "paramself3"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "fuzzyStr",
-      "scopeFile": "/app/controller/sqlEggMysql.js",
-      "scopeFunc": "eggConnBlack1"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "param",
-      "scopeFile": "/app/controller/VariableCover/variable_cover_3.js",
-      "scopeFunc": "echo"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "advisorId",
-      "scopeFile": "/app/controller/Level_test/LevelParamSelf2.js",
-      "scopeFunc": "paramself"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "instId",
-      "scopeFile": "/app/controller/Level_test/LevelParamSelf2.js",
-      "scopeFunc": "paramself"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "sql",
-      "scopeFile": "/app/controller/mysql2Test.js",
-      "scopeFunc": "test1"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "sql",
-      "scopeFile": "/app/controller/mysql2Test.js",
-      "scopeFunc": "test2"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "userId",
-      "scopeFile": "/app/modules/foo/controller/FooController.ts",
-      "scopeFunc": "user"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "fuzzyStr",
-      "scopeFile": "/app/controller/sqlEggMysql.js",
-      "scopeFunc": "eggMysqlWhite1"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "aa",
-      "scopeFile": "/app/controller/ssrf_app_rpcAndGet_ts.ts",
-      "scopeFunc": "testSsrf"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "fuzzyStr",
-      "scopeFile": "/app/controller/sqlEggMysql.js",
-      "scopeFunc": "eggMysqlBlack1"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "param",
-      "scopeFile": "/app/controller/Level_test/LevelParamSelf.js",
-      "scopeFunc": "echo5"
-    },
-    {
-      "introPoint": 4,
-      "kind": "EGG_INPUT",
-      "path": "params",
-      "scopeFile": "/app/controller/Level_test/level_test_2.ts",
-      "scopeFunc": "count_day"
+    "sinks": {
+      "FuncCallTaintSink": [
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsModuleDeserialize",
+          "fsig": "node-serialize.unserialize"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsFileOperator",
+          "fsig": "ssh2-sftp-client.get"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsFileOperator",
+          "fsig": "fs.readFileSync"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsFileOperator",
+          "fsig": "rimraf"
+        },
+        {
+          "args": [
+            "1"
+          ],
+          "attribute": "NodejsFileOperator",
+          "fsig": "ssh2-sftp-client.put"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "vm.runInNewContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "vm.runInContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "vm.runInThisContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "node:vm.runInNewContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "node:vm.runInContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "node:vm.runInThisContext"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "child_process.exec"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "child_process.spawn"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "eval"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "exec"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsExec",
+          "fsig": "execSync"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "this.ctx.curl"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "this.app.curl"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "ctx.curl"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "app.curl"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "axios"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "axios.get"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "axios.post"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsVm2Run",
+          "fsig": "vm2.VM.run"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsVm2Run",
+          "fsig": "node:vm2.VM.run"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsVm2Run",
+          "fsig": "@alipay/egg-slark.default.generate"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsVm2Run",
+          "fsig": "@alipay/egg-slark.generate"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "mysql2.createConnection.query"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "connection.query"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "mysql2.createConnection.query"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "conn.query"
+        },
+        {
+          "fsig": "dom-iterator.next",
+          "args": [
+            0
+          ]
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "this.ctx.app.mysql.query"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "ctx.app.mysql.query"
+        },
+        {
+          "args": [
+            "0"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "this.app.mysql.query"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "sequelize.query"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "connection.query"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "prisma.$queryRawUnsafe"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "Model.where"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSqlInjection",
+          "fsig": "User.query().whereRaw"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsCommandInjection",
+          "fsig": "child_process.exec"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsCommandInjection",
+          "fsig": "child_process.spawn"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsCommandInjection",
+          "fsig": "child_process.execSync"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsCommandInjection",
+          "fsig": "shelljs.exec"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsPathTraversal",
+          "fsig": "fs.readFileSync"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsPathTraversal",
+          "fsig": "fs.writeFileSync"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsPathTraversal",
+          "fsig": "fs.createReadStream"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsPathTraversal",
+          "fsig": "res.sendFile"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsPathTraversal",
+          "fsig": "express.static"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "axios.get"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "fetch"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "node-fetch"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "request"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsSSRF",
+          "fsig": "http.request"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsTemplateInjection",
+          "fsig": "ejs.render"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsTemplateInjection",
+          "fsig": "handlebars.compile"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsTemplateInjection",
+          "fsig": "pug.renderFile"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsTemplateInjection",
+          "fsig": "nunjucks.renderString"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsXSS",
+          "fsig": "dangerouslySetInnerHTML"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsXSS",
+          "fsig": "v-html"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsXSS",
+          "fsig": "[innerHTML]"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsLogInjection",
+          "fsig": "console.log"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsLogInjection",
+          "fsig": "winston.info"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsLogInjection",
+          "fsig": "pino.info"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsDeserializationGadget",
+          "fsig": "JSON.stringify"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsDeserializationGadget",
+          "fsig": "YAML.stringify"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsDeserializationGadget",
+          "fsig": "msgpack.encode"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsResponseWrite",
+          "fsig": "res.send"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsResponseWrite",
+          "fsig": "res.json"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsResponseWrite",
+          "fsig": "res.end"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsInfoLeak",
+          "fsig": "res.status().send"
+        },
+        {
+          "args": [
+            "*"
+          ],
+          "attribute": "NodejsInfoLeak",
+          "fsig": "console.error"
+        }
+      ]
     }
-  ],
-  "RouterPath": [
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/File.js",
-      "routerFunc": "upload2SftpWhite"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/sqlEggMysql.js",
-      "routerFunc": "eggConnWhite2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/user.ts",
-      "routerFunc": "sayHello"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/VariableCover/anti_variable_cover_4.js",
-      "routerFunc": "echo4"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/sqlEggMysql.js",
-      "routerFunc": "eggConnWhite1"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/oneapi.ts",
-      "routerFunc": "echo"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/vm2Test.js",
-      "routerFunc": "testVm21"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/VariableCover/variable_cover_1.js",
-      "routerFunc": "query"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/execHttp.js",
-      "routerFunc": "execHttpTest"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/LevelParamSelf3.js",
-      "routerFunc": "paramself3"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/sqlEggMysql.js",
-      "routerFunc": "eggConnBlack1"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/VariableCover/variable_cover_3.js",
-      "routerFunc": "echo"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/LevelParamSelf2.js",
-      "routerFunc": "paramself"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrfHttp.ts",
-      "routerFunc": "testhttp3"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrfHttp.ts",
-      "routerFunc": "ssrfHttpTest"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrfHttpTwo.js",
-      "routerFunc": "testAppSsrf2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/mysql2Test.js",
-      "routerFunc": "test1"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/mysql2Test.js",
-      "routerFunc": "test2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrfHttpTwo.js",
-      "routerFunc": "testSsrf2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/modules/foo/controller/FooController.ts",
-      "routerFunc": "user"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/level_test_3.ts",
-      "routerFunc": "queryAdvisorRankListFacade"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/sqlEggMysql.js",
-      "routerFunc": "eggMysqlWhite1"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrf_app_rpcAndGet_ts.ts",
-      "routerFunc": "testSsrf"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/sqlEggMysql.js",
-      "routerFunc": "eggMysqlBlack1"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/File.js",
-      "routerFunc": "upload2SftpBlack2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/module_deserialize_directly_call.js",
-      "routerFunc": "moduleDeserializeTest"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/LevelParamSelf.js",
-      "routerFunc": "echo5"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/vm2Test.js",
-      "routerFunc": "testVm2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/iteratorNextTest.js",
-      "routerFunc": "testNext"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/File.js",
-      "routerFunc": "upload2SftpWhite2"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/level_test_2.ts",
-      "routerFunc": "getAdvisorReservoirManagementInfo"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/Level_test/level_test_2.ts",
-      "routerFunc": "count_day"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/ssrfHttp.ts",
-      "routerFunc": "testhttp"
-    },
-    {
-      "routerAttribute": "HTTP",
-      "routerFile": "/app/controller/File.js",
-      "routerFunc": "upload2SftpBlack"
-    }
-  ],
-  "FuncCallTaintSink": [
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.oneapi.ccrprod.repayBillQueryFacade.hasHistRepayRecord",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.oneapi.ccrprod.repayBillQueryFacade.hasHistRepayRecord",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.oneapi.ccrprod.repayBillQueryFacade.hasHistRepayRecord",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.oneapi.chairmosn.EchoFacade.echo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.oneapi.chairmosn.EchoFacade.echo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.oneapi.chairmosn.EchoFacade.echo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.proxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.proxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.proxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "rpcProxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "proxy.AdvisorReservoirManagementFacade.getAdvisorReservoirManagementInfo",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.proxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.proxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.AdvisorRankListFacade.queryAdvisorRankList.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.AdvisorRankListFacade.queryAdvisorRankList.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.proxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.rpcProxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "rpcProxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "proxy.AdvisorRankListFacade.queryAdvisorRankList",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.proxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.proxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.rpcProxy.certificateSendOrderQueryFacade.countAvailableNum.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.rpcProxy.certificateSendOrderQueryFacade.countAvailableNum.override",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.proxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.rpcProxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "rpcProxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "proxy.certificateSendOrderQueryFacade.countAvailableNum",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "ctx.oneapi.insagentprod.AgentToDoQueryFacade.countAnchorDay",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.ctx.oneapi.insagentprod.AgentToDoQueryFacade.countAnchorDay",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "*"
-      ],
-      "attribute": "NodejsLevelAuthority",
-      "fsig": "this.oneapi.insagentprod.AgentToDoQueryFacade.countAnchorDay",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsModuleDeserialize",
-      "fsig": "node-serialize.unserialize",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsFileOperator",
-      "fsig": "ssh2-sftp-client.get",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsFileOperator",
-      "fsig": "fs.readFileSync",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsFileOperator",
-      "fsig": "rimraf",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "1"
-      ],
-      "attribute": "NodejsFileOperator",
-      "fsig": "ssh2-sftp-client.put",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "vm.runInNewContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "vm.runInContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "vm.runInThisContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "node:vm.runInNewContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "node:vm.runInContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "node:vm.runInThisContext",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "child_process.exec",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "child_process.spawn",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "eval",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "exec",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsExec",
-      "fsig": "execSync",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "this.ctx.curl",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "this.app.curl",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "ctx.curl",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "app.curl",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "axios",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "axios.get",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSSRF",
-      "fsig": "axios.post",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsVm2Run",
-      "fsig": "vm2.VM.run",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsVm2Run",
-      "fsig": "node:vm2.VM.run",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsVm2Run",
-      "fsig": "@alipay/egg-slark.default.generate",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsVm2Run",
-      "fsig": "@alipay/egg-slark.generate",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "mysql2.createConnection.query",
-      "kind": "EGG_INPUT",
-      "packageValue": "true"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "connection.query",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "mysql2.createConnection.query",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "conn.query",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "fsig": "dom-iterator.next",
-      "args": [
-        0
-      ],
-      "packageValue": "true",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "this.ctx.app.mysql.query",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "ctx.app.mysql.query",
-      "kind": "EGG_INPUT"
-    },
-    {
-      "args": [
-        "0"
-      ],
-      "attribute": "NodejsSqlInjection",
-      "fsig": "this.app.mysql.query",
-      "kind": "EGG_INPUT"
-    }
-  ],
-  "Rules": [
-    {
-      "advice": "Avoid flowing the source to the taint sink",
-      "desc": "taint flow for egg input",
-      "service": 1,
-      "type": "taint_flow_egg_input"
-    }
-  ],
-  "AppName": "chairbenchmark"
-}
+  }
+]
+
