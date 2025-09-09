@@ -1,75 +1,54 @@
-SHELL = /bin/bash
+PROJECT:=go-admin
 
-#SCRIPT_DIR         = $(shell pwd)/etc/script
-#请选择golang版本
-BUILD_IMAGE_SERVER  = golang:1.22
-#请选择node版本
-BUILD_IMAGE_WEB     = node:20
-#项目名称
-PROJECT_NAME        = github.com/flipped-aurora/gin-vue-admin/server
-#配置文件目录
-CONFIG_FILE         = config.yaml
-#镜像仓库命名空间
-IMAGE_NAME          = gva
-#镜像地址
-REPOSITORY          = registry.cn-hangzhou.aliyuncs.com/${IMAGE_NAME}
-#镜像版本
-TAGS_OPT           ?= latest
-PLUGIN             ?= email
+.PHONY: build
+build:
+	CGO_ENABLED=0 go build -ldflags="-w -s" -a -installsuffix "" -o go-admin .
 
-#容器环境前后端共同打包
-build: build-web build-server
-	docker run --name build-local --rm -v $(shell pwd):/go/src/${PROJECT_NAME} -w /go/src/${PROJECT_NAME} ${BUILD_IMAGE_SERVER} make build-local
+# make build-linux
+build-linux:
+	@docker build -t go-admin:latest .
+	@echo "build successful"
 
-#容器环境打包前端
-build-web:
-	docker run --name build-web-local --rm -v $(shell pwd):/go/src/${PROJECT_NAME} -w /go/src/${PROJECT_NAME} ${BUILD_IMAGE_WEB} make build-web-local
+build-sqlite:
+	go build -tags sqlite3 -ldflags="-w -s" -a -installsuffix -o go-admin .
 
-#容器环境打包后端
-build-server:
-	docker run --name build-server-local --rm -v $(shell pwd):/go/src/${PROJECT_NAME} -w /go/src/${PROJECT_NAME} ${BUILD_IMAGE_SERVER} make build-server-local
+# make run
+run:
+    # delete go-admin-api container
+	@if [ $(shell docker ps -aq --filter name=go-admin --filter publish=8000) ]; then docker rm -f go-admin; fi
 
-#构建web镜像
-build-image-web:
-	@cd web/ && docker build -t ${REPOSITORY}/web:${TAGS_OPT} .
+    # 启动方法一 run go-admin-api container  docker-compose 启动方式
+    # 进入到项目根目录 执行 make run 命令
+	@docker-compose up -d
 
-#构建server镜像
-build-image-server:
-	@cd server/ && docker build -t ${REPOSITORY}/server:${TAGS_OPT} .
+	# 启动方式二 docker run  这里注意-v挂载的宿主机的地址改为部署时的实际决对路径
+    #@docker run --name=go-admin -p 8000:8000 -v /home/code/go/src/go-admin/go-admin/config:/go-admin-api/config  -v /home/code/go/src/go-admin/go-admin-api/static:/go-admin/static -v /home/code/go/src/go-admin/go-admin/temp:/go-admin-api/temp -d --restart=always go-admin:latest
 
-#本地环境打包前后端
-build-local:
-	if [ -d "build" ];then rm -rf build; else echo "OK!"; fi \
-	&& if [ -f "/.dockerenv" ];then echo "OK!"; else  make build-web-local && make build-server-local; fi \
-	&& mkdir build && cp -r web/dist build/ && cp server/server build/ && cp -r server/resource build/resource
+	@echo "go-admin service is running..."
 
-#本地环境打包前端
-build-web-local:
-	@cd web/ && if [ -d "dist" ];then rm -rf dist; else echo "OK!"; fi \
-	&& yarn config set registry http://mirrors.cloud.tencent.com/npm/ && yarn install && yarn build
+	# delete Tag=<none> 的镜像
+	@docker image prune -f
+	@docker ps -a | grep "go-admin"
 
-#本地环境打包后端
-build-server-local:
-	@cd server/ && if [ -f "server" ];then rm -rf server; else echo "OK!"; fi \
-	&& go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct \
-	&& go env -w CGO_ENABLED=0 && go env  && go mod tidy \
-	&& go build -ldflags "-B 0x$(shell head -c20 /dev/urandom|od -An -tx1|tr -d ' \n') -X main.Version=${TAGS_OPT}" -v
+stop:
+    # delete go-admin-api container
+	@if [ $(shell docker ps -aq --filter name=go-admin --filter publish=8000) ]; then docker-compose down; fi
+	#@if [ $(shell docker ps -aq --filter name=go-admin --filter publish=8000) ]; then docker rm -f go-admin; fi
+	#@echo "go-admin stop success"
 
-#打包前后端二合一镜像
-image: build
-	docker build -t ${REPOSITORY}/gin-vue-admin:${TAGS_OPT} -f deploy/docker/Dockerfile .
 
-#尝鲜版
-images: build build-image-web build-image-server
-	docker build -t ${REPOSITORY}/all:${TAGS_OPT} -f deploy/docker/Dockerfile .
+#.PHONY: test
+#test:
+#	go test -v ./... -cover
 
-#swagger 文档生成
-doc:
-	@cd server && swag init
+#.PHONY: docker
+#docker:
+#	docker build . -t go-admin:latest
 
-#插件快捷打包： make plugin PLUGIN="这里是插件文件夹名称,默认为email"
-plugin:
-	if [ -d ".plugin" ];then rm -rf .plugin ; else echo "OK!"; fi && mkdir -p .plugin/${PLUGIN}/{server/plugin,web/plugin} \
-	&& if [ -d "server/plugin/${PLUGIN}" ];then cp -r server/plugin/${PLUGIN} .plugin/${PLUGIN}/server/plugin/ ; else echo "OK!"; fi \
-	&& if [ -d "web/src/plugin/${PLUGIN}" ];then cp -r web/src/plugin/${PLUGIN} .plugin/${PLUGIN}/web/plugin/ ; else echo "OK!"; fi \
-	&& cd .plugin && zip -r ${PLUGIN}.zip ${PLUGIN} && mv ${PLUGIN}.zip ../ && cd ..
+# make deploy
+deploy:
+
+	#@git checkout master
+	#@git pull origin master
+	make build-linux
+	make run
